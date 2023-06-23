@@ -1,17 +1,19 @@
 #!/bin/sh
+set -e
 
+NAME-lddmodules
 case "$1" in 
 	start)
 		echo "Loading drivers and modules"
-		scull_load
-		module_load faulty
 		modprobe hello
+		module_load faulty
+		scull_load
 		;;
 	stop)
 		echo "Unloading drivers and modules"
-		scull_unload
-		module_unload faulty
 		rmmod hello
+        module_unload faulty
+        scull_unload
 		;;
 	*)
 		echo "usage: $0 {start|stop}"
