@@ -13,7 +13,10 @@ LDD_VERSION = '43afe3506c042ac664e729d284482e6d42c5a7cd'
 # Your site should start with git@github.com:
 LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-nmilligan-cu.git'
 LDD_METHOD = git
+LDD_GIT_SUBMODULES = YES
+LDD_MODULE_SUBDIRS = misc-modules scull
 
+$(eval $(kernel-module))
 
 define LDD_INSTALL_TARGET_CMDS
 	mkdir -p $(BR2_ROOTFS_OVERLAY)/bin
