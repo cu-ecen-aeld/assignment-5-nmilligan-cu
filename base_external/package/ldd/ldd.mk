@@ -12,7 +12,7 @@ LDD_VERSION = '43afe3506c042ac664e729d284482e6d42c5a7cd'
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
 LDD_SITE = 'git@github.com:cu-ecen-aeld/assignment-7-nmilligan-cu.git'
-LDD_METHOD = git
+LDD_SITE_METHOD = git
 LDD_GIT_SUBMODULES = YES
 LDD_MODULE_SUBDIRS = misc-modules scull
 
