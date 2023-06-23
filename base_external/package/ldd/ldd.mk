@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 7 git contents
-LDD_VERSION = '810159608f681213f57160af577b90f2a98c1b9b'
+LDD_VERSION = 'f36f06174cbe7df7df8a068b76a80a6cfa1caad7'
 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
