@@ -18,7 +18,7 @@ AESD_CHAR_DRIVER_MODULE_SUBDIRS = aesd-char-driver
 
 $(eval $(kernel-module))
 
-define LDD_INSTALL_TARGET_CMDS
+define AESD_CHAR_DRIVER_INSTALL_TARGET_CMDS
 	mkdir -p $(BR2_ROOTFS_OVERLAY)/bin
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_load $(BR2_ROOTFS_OVERLAY)/bin/aesdchar_load
 	$(INSTALL) -m 0755 $(@D)/aesd-char-driver/aesdchar_unload $(BR2_ROOTFS_OVERLAY)/bin/aesdchar_unload
