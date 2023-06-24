@@ -5,12 +5,14 @@ NAME=lddmodules
 case "$1" in 
 	start)
 		echo "Loading drivers and modules"
+		aesdchar_load
 		modprobe hello
 		module_load faulty
 		scull_load
 		;;
 	stop)
 		echo "Unloading drivers and modules"
+		aesdchar_unload
 		rmmod hello
         module_unload faulty
         scull_unload
