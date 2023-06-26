@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 7 git contents
-AESDCHAR_VERSION = '31e733f8713ae58ca230813b7ff69a10a4d97899'
+AESDCHAR_VERSION = '1b234dc033c006d1322de22d8070972ffe0b3133'
 
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
